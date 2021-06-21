@@ -25,6 +25,10 @@ public class Jarvisalg {
                     System.out.println("( " + points[i].x + ", " + points[i].y + " )");
                 }
         }
+        private boolean orijentacija(Point p, Point q, Point r) {
+            int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+            return !(val >= 0);
+        }
 
         
 
